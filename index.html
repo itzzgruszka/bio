@@ -1,134 +1,126 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>itzz_gruszka - intro Bio</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      min-height: 100vh;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      color: #fff;
-      background: #000;
-      overflow: hidden;
-    }
-    #intro {
-      position: fixed;
-      inset: 0;
-      display: grid;
-      place-items: center;
-      background: #000;
-      z-index: 999;
-    }
-    #intro button {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      background: radial-gradient(circle at 30% 30%, #ffffff22, #ffffff03 70%);
-      color: #fff;
-      font-size: 1.3rem;
-      font-weight: 900;
-      letter-spacing: .07em;
-      cursor: pointer;
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.35);
-      animation: pulse 1.35s ease-in-out infinite;
-      transition: transform .2s ease;
-    }
-    #intro button:hover { transform: scale(1.08); }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(255,255,255,.5); }
-      70% { box-shadow: 0 0 0 24px rgba(255,255,255,0); }
-      100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
-    }
-    #main {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity .45s ease, visibility .45s ease;
-      min-height: 100vh;
-      background: linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)), url("https://i.pinimg.com/736x/e6/7f/30/e67f303fe06ea9b47c54027cfe1a36cb.jpg") center/cover fixed no-repeat;
-      display: grid;
-      place-items: center;
-      padding: 2rem;
-    }
-    #main.visible { visibility: visible; opacity: 1; }
-    .card {
-      width: min(100%, 430px);
-      text-align: center;
-      background: rgba(0,0,0,.72);
-      border: 2px solid #fff;
-      border-radius: 16px;
-      backdrop-filter: blur(4px);
-      padding: 24px;
-      box-shadow: 0 0 30px rgba(0,0,0,.6);
-    }
-    .avatar { width: 154px; height: 154px; border-radius: 50%; border: 3px solid #fff; overflow: hidden; margin: 0 auto 18px; object-fit: cover; }
-    h1 {
-      margin: 8px 0 4px;
-      font-size: 2.3rem;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      background: linear-gradient(120deg, #eef8ff, #d0e7ff 25%, #f6f6ff);
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-shadow: 0 0 14px rgba(255,255,255,.75), 0 0 20px rgba(0,0,0,.4);
-    }
-    p.subtitle { margin-bottom: 18px; font-size: .95rem; opacity: .95; }
-    .social { display: grid; gap: 12px; margin-top: 12px; }
-    .social a {
-      display: grid;
-      grid-template-columns: 32px 1fr;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 12px;
-      border: 1px solid #fff;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #fff;
-      background: rgba(255,255,255,.08);
-      transition: transform .16s ease, background .18s ease;
-    }
-    .social a:hover { transform: translateY(-2px); background: rgba(255,255,255,.22); }
-    .social img { width: 28px; height: 28px; border-radius: 6px; filter: grayscale(1) brightness(1.05); background: #000; padding: 2px; }
-    .credits { margin-top: 16px; font-size: .76rem; opacity: .78; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itzz_gruszka bio</title>
+
+    <style>
+        .youtube {
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
+    gap: 10px;                  
+
+    border: 2px solid #1eff00(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    background-color: grey;
+    box-shadow: 0 0 10px #1eff00,
+            0 0 20px #1eff00,
+            0 0 40px #1eff00;
+
+    text-decoration: none;      
+    color: black;               
+
+    margin: 10px auto;          
+}
+         .tiktok {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #808080;
+
+        border: 2px solid #1eff00(255, 255, 255);
+        padding: 10px;
+        border-radius: 10px;
+        width: 250px;
+        box-shadow: 0 0 10px #1eff00,
+            0 0 20px #1eff00,
+            0 0 40px #1eff00;
+
+        text-decoration: none;
+        color: black;
+
+        margin:black;
+        }
+         .all {
+            border: 10px #1eff00;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            text-align: center;
+            margin: 10px auto;
+            background-color: #ffffff54;
+            box-shadow: 0 0 10px #1eff00,
+            0 0 20px #1eff00,
+            0 0 40px #1eff00;
+         }
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+         }
+         .profilowe {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #1eff00(255, 255, 255);
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            box-shadow: 0 0 10px #1eff00,
+            0 0 20px #1eff00,
+            0 0 40px #1eff00;
+         }
+         .profilowe img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+         .nick
+         {
+            font-family: "Arial Black", Arial, sans-serif;
+            font-size: large;
+            font-weight: 900;
+            text-shadow: 0 0 10px #818181,
+            0 0 20px #818181,
+            0 0 40px #818181;;
+         }
+         body {
+            background-color: black;
+         }
+         .opis {
+            font-family: Arial, sans-serif;
+         }
+    </style>
 </head>
 <body>
-  <div id="intro">
-    <button id="bioBtn">Bio</button>
-  </div>
-
-  <main id="main">
-    <section class="card">
-      <img class="avatar" src="https://i.pinimg.com/originals/85/13/5a/85135a9c36daecc0e48175571ef80b1b.gif" alt="itzz_gruszka profilowe" />
-      <h1>itzz_gruszka</h1>
-      <p class="subtitle">Prowadze serwer KewuLine robimy miniaturki, montaż, boty discord, serwery discord, animacje, strony web wbijaj z linku niżej  </p>
-      <div class="social">
-        <a href="https://youtube.com/@itzz_gruszka12?si=tR8beaDrqzhVzMhS" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.pinimg.com/736x/e8/c9/82/e8c9828387de2a83e5469a95bc6d8574.jpg" alt="YouTube logo">
+    <div class="all">
+    <div class="profilowe ">
+        <img src="https://i.postimg.cc/2SCWKfcg/Nowy-projekt-(1).png" alt="profilowe" height="100px">
+    </div>
+     <div class="nick"> <H1>Itzz_gruszka</H1> </div>
+    <p> </p>
+    <div class="opis">
+    <p>Poczatkujący web developer</p>
+    </div>
+    <br>
+     <a href="https://youtube.com/@itzz_gruszka12?si=tR8beaDrqzhVzMhS" class="youtube">
+          <img src="https://i.postimg.cc/NjKdzB2x/youtube.jpg" alt="YouTube logo" height="50px">
           <span>YouTube: @itzz_gruszka12</span>
         </a>
-        <a href="https://www.tiktok.com/@itzz_gruszka12?_r=1&_t=ZN-951LwRFZnWR" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.pinimg.com/736x/c6/b8/26/c6b826adb4afd1206a1c668528c851ec.jpg" alt="TikTok logo">
+        <br>
+        <br>
+        <a href="https://www.tiktok.com/@itzz_gruszka12?_r=1&_t=ZN-951LwRFZnWR" class="tiktok">
+          <img src="https://i.postimg.cc/fy4sJ84d/tiktok.jpg" alt="TikTok logo" height="50px">
           <span>TikTok: @itzz_gruszka12</span>
-        <a href="https://discord.gg/aXbDyGPpd7" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.postimg.cc/D03HHGy0/Kewuline-logo.png" alt="Discord logo">
-          <span>Discord: KewuLine</span>  
         </a>
-      </div>
-      <p class="credits">By szefitek.dev Żeby mieć strone napisz na discord : szefitek.dev.</p>
-    </section>
-  </main>
-
-  <script>
-    const intro = document.getElementById("intro");
-    const main = document.getElementById("main");
-    document.getElementById("bioBtn").addEventListener("click", () => {
-      intro.style.display = "none";
-      main.classList.add("visible");
-    });
-  </script>
+        <br>
+        <p>© By itzz_gruszka chcesz takie bio? pisz discord: Itzz_gruszka </p>
+        </div>
 </body>
 </html>
